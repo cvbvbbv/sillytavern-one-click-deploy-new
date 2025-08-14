@@ -1,9 +1,9 @@
-# AI应用全功能一体化部署脚本
+# SillyTavern全功能一体化部署脚本
 
-[![GitHub release](https://img.shields.io/github/release/你的用户名/ai-deploy-script.svg)](https://github.com/你的用户名/ai-deploy-script/releases)
+[![GitHub release](https://img.shields.io/github/release/begonia599/sillytavern-one-click-deploy-new.svg)](https://github.com/begonia599/sillytavern-one-click-deploy-new/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-一个功能完整的AI应用部署脚本，支持一键安装Docker、SillyTavern酒馆、Clewdr，并自动配置Nginx反向代理和SSL证书。
+一个功能完整的SillyTavern和AI应用部署脚本，支持一键安装Docker、SillyTavern酒馆、Clewdr，并自动配置Nginx反向代理和SSL证书。
 
 ## ✨ 功能特性
 
@@ -46,7 +46,7 @@
 
 ```bash
 # 下载脚本
-curl -fsSL https://raw.githubusercontent.com/你的用户名/ai-deploy-script/main/all-in-one-deploy.sh -o all-in-one-deploy.sh
+curl -fsSL https://raw.githubusercontent.com/begonia599/sillytavern-one-click-deploy-new/main/all-in-one-deploy.sh -o all-in-one-deploy.sh
 
 # 给予执行权限
 chmod +x all-in-one-deploy.sh
@@ -58,7 +58,7 @@ chmod +x all-in-one-deploy.sh
 或者使用wget：
 
 ```bash
-wget https://raw.githubusercontent.com/你的用户名/ai-deploy-script/main/all-in-one-deploy.sh
+wget https://raw.githubusercontent.com/begonia599/sillytavern-one-click-deploy-new/main/all-in-one-deploy.sh
 chmod +x all-in-one-deploy.sh
 ./all-in-one-deploy.sh
 ```
@@ -550,8 +550,8 @@ docker compose restart
 - **Let's Encrypt文档**: https://letsencrypt.org/docs/
 
 ### 社区支持
-- **GitHub Issues**: [提交问题和建议](https://github.com/你的用户名/ai-deploy-script/issues)
-- **讨论区**: [参与讨论](https://github.com/你的用户名/ai-deploy-script/discussions)
+- **GitHub Issues**: [提交问题和建议](https://github.com/begonia599/sillytavern-one-click-deploy-new/issues)
+- **讨论区**: [参与讨论](https://github.com/begonia599/sillytavern-one-click-deploy-new/discussions)
 
 ### 常用检查命令
 ```bash
@@ -589,7 +589,7 @@ sudo netstat -tlnp | grep -E ':80|:443|:8000|:8484'
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=你的用户名/ai-deploy-script&type=Date)](https://star-history.com/#你的用户名/ai-deploy-script&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=begonia599/sillytavern-one-click-deploy-new&type=Date)](https://star-history.com/#begonia599/sillytavern-one-click-deploy-new&Date)
 
 ## 📈 更新日志
 
