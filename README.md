@@ -5,7 +5,7 @@
 
 fork from https://github.com/begonia599/sillytavern-one-click-deploy-new  
 由于飞牛os自带的nigix占用了8000端口，故将酒馆的端口改为4160：8000
-无法测试nigix
+```无法测试nigix```
 使用wget：
 
 ```bash
