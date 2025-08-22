@@ -563,7 +563,7 @@ services:
       - NODE_ENV=production
       - FORCE_COLOR=1
     ports:
-      - "8000:8000"
+      - "4160:8000"
     volumes:
       - "./config:/home/node/app/config"
       - "./data:/home/node/app/data"
