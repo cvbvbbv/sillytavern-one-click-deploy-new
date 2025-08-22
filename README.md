@@ -9,7 +9,7 @@ fork from https://github.com/begonia599/sillytavern-one-click-deploy-new
 **无法测试nigix**  
 **无法测试nigix**  
 **无法测试nigix**  
- 
+
 使用wget：
 
 ```bash
