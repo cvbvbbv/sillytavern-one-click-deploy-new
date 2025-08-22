@@ -321,14 +321,14 @@ collect_all_configurations() {
         if [ "$INSTALL_SILLYTAVERN" = true ]; then
             config_count=$((config_count + 1))
             echo ""
-            echo ">>> 配置SillyTavern (端口8000) <<<"
+            echo ">>> 配置SillyTavern (端口4160) <<<"
             while true; do
                 read -p "请输入SillyTavern的域名 (留空跳过): " st_domain
                 if [ -n "$st_domain" ]; then
                     if [[ "$st_domain" =~ ^[a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?(\.[a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?)*$ ]]; then
-                        NGINX_CONFIGS+=("8000|$st_domain")
-                        PORT_DOMAIN_MAP[8000]="$st_domain"
-                        echo "✓ SillyTavern: $st_domain -> 8000"
+                        NGINX_CONFIGS+=("4160|$st_domain")
+                        PORT_DOMAIN_MAP[4160]="$st_domain"
+                        echo "✓ SillyTavern: $st_domain -> 4160"
                         
                         # 如果需要SSL，自动添加到SSL域名列表
                         if [ "$SETUP_SSL" = true ]; then
@@ -480,7 +480,7 @@ show_configuration_summary() {
     echo ""
     echo "📱 应用部署:"
     if [ "$INSTALL_SILLYTAVERN" = true ]; then
-        echo "  ✓ SillyTavern (端口8000)"
+        echo "  ✓ SillyTavern (端口4160)"
     fi
     if [ "$INSTALL_CLEWDR" = true ]; then
         echo "  ✓ Clewdr (端口8484)"
