@@ -583,10 +583,10 @@ EOF
     echo "✓ SillyTavern部署完成！"
     
     # 显示访问地址
-    if [ -n "${PORT_DOMAIN_MAP[8000]}" ]; then
-        echo "📝 访问地址: http://${PORT_DOMAIN_MAP[8000]}"
+    if [ -n "${PORT_DOMAIN_MAP[4160]}" ]; then
+        echo "📝 访问地址: http://${PORT_DOMAIN_MAP[4160]}"
     else
-        echo "📝 访问地址: http://你的服务器IP:8000"
+        echo "📝 访问地址: http://你的服务器IP:4160"
     fi
     
     # 等待容器完全启动
@@ -602,9 +602,9 @@ EOF
     echo "⚠ 这是必需的安全配置，无论是否使用域名都需要配置"
     echo "⚠ 不配置将无法正常访问SillyTavern"
     
-    if [ -n "${PORT_DOMAIN_MAP[8000]}" ]; then
+    if [ -n "${PORT_DOMAIN_MAP[4160]}" ]; then
         echo ""
-        echo "💡 您配置了域名访问: ${PORT_DOMAIN_MAP[8000]}"
+        echo "💡 您配置了域名访问: ${PORT_DOMAIN_MAP[4160]}"
         echo "   可以选择现在配置或稍后通过域名访问时配置"
     fi
     
