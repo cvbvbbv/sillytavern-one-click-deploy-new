@@ -666,7 +666,7 @@ configure_sillytavern_whitelist() {
     
     if [ ! -f "$CONFIG_PATH" ]; then
         echo "⚠ 配置文件未生成，请稍后手动配置"
-        echo "   访问 http://你的服务器IP:8000 以生成配置文件"
+        echo "   访问 http://你的服务器IP:4160 以生成配置文件"
         return 1
     fi
     
@@ -682,10 +682,10 @@ configure_sillytavern_whitelist() {
     echo ""
     
     # 显示访问地址
-    if [ -n "${PORT_DOMAIN_MAP[8000]}" ]; then
-        echo ">> 请先访问: http://${PORT_DOMAIN_MAP[8000]} 或 http://你的服务器IP:8000"
+    if [ -n "${PORT_DOMAIN_MAP[4160]}" ]; then
+        echo ">> 请先访问: http://${PORT_DOMAIN_MAP[4160]} 或 http://你的服务器IP:8000"
     else
-        echo ">> 请先访问: http://你的服务器IP:8000"
+        echo ">> 请先访问: http://你的服务器IP:4160"
     fi
     echo ">> 您会看到白名单错误页面，请记录页面显示的公网IP地址"
     echo "-----------------------------------------------"
@@ -730,10 +730,10 @@ configure_sillytavern_whitelist() {
     echo ">> 配置已更新，请刷新浏览器页面"
     echo ">> 您现在应该能进入SillyTavern并创建账户了"
     echo ""
-    if [ -n "${PORT_DOMAIN_MAP[8000]}" ]; then
-        echo "📝 访问地址: http://${PORT_DOMAIN_MAP[8000]}"
+    if [ -n "${PORT_DOMAIN_MAP[4160]}" ]; then
+        echo "📝 访问地址: http://${PORT_DOMAIN_MAP[4160]}"
     else
-        echo "📝 访问地址: http://你的服务器IP:8000"
+        echo "📝 访问地址: http://你的服务器IP:4160"
     fi
     echo ""
     echo "⚠ 重要：请完成账户创建和登录 - 这对下一步很关键！"
@@ -782,10 +782,10 @@ configure_sillytavern_whitelist() {
     echo "✅ 白名单模式已禁用"
     echo "✅ 您的SillyTavern现在可供所有人访问"
     
-    if [ -n "${PORT_DOMAIN_MAP[8000]}" ]; then
-        echo "📝 访问地址: http://${PORT_DOMAIN_MAP[8000]}"
+    if [ -n "${PORT_DOMAIN_MAP[4160]}" ]; then
+        echo "📝 访问地址: http://${PORT_DOMAIN_MAP[4160]}"
     else
-        echo "📝 访问地址: http://你的服务器IP:8000"
+        echo "📝 访问地址: http://你的服务器IP:4160"
     fi
     
     echo ""
@@ -1097,14 +1097,14 @@ show_final_results() {
     
     echo "📱 应用服务："
     if [ "$INSTALL_SILLYTAVERN" = true ]; then
-        if [ -n "${PORT_DOMAIN_MAP[8000]}" ]; then
+        if [ -n "${PORT_DOMAIN_MAP[4160]}" ]; then
             if [ "$SETUP_SSL" = true ]; then
-                echo "  ✅ SillyTavern: https://${PORT_DOMAIN_MAP[8000]}"
+                echo "  ✅ SillyTavern: https://${PORT_DOMAIN_MAP[4160]}"
             else
-                echo "  ✅ SillyTavern: http://${PORT_DOMAIN_MAP[8000]}"
+                echo "  ✅ SillyTavern: http://${PORT_DOMAIN_MAP[4160]}"
             fi
         else
-            echo "  ✅ SillyTavern: http://服务器IP:8000"
+            echo "  ✅ SillyTavern: http://服务器IP:4160"
         fi
     fi
     
